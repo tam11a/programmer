@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Programmer | Menu</title>
+        <style>
+            *{
+                background-color: #000;
+                margin: 0;
+                padding: 0;
+                cursor: pointer;
+            }
+            a{
+                color: #fff;
+                font-size: 0px;
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-decoration: none;
+                margin: 0;
+                padding: 0;
+                transition: 1s;
+            }
+            body .cent{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .mem #cs{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 30px;
+                color: #fff;
+                text-align: center;
+                margin-bottom: -70px;
+                transition: 1s;
+            }
+            #cs #hi{
+                font-size: 15px;
+            }
+            .mem .boxs{
+                padding: 0;
+                height: 100px;
+                width: 200px;
+                border-bottom: #fff 4px solid;
+                margin: 30px 5px 30px 5px;
+                float: left;
+                height: 50px;
+                width: 60px;
+                transition: 1s;
+            }
+            .mem:hover > #cs{
+                opacity: 0;
+                height: 0;
+                width: 0;
+                transition: 0s;
+            }
+            .mem:hover > .boxs{
+                padding: 0;
+                width: 200px;
+                transition: 1s;
+            }
+            .mem:hover .boxs a{
+                padding-top: 50%;
+                font-size: 20px;
+                transition: 1s;
+            }
+            
+            .mem .boxs:hover{
+                border-top: #fff 4px solid;
+                padding-top: 20px;
+                margin-top: 5px;
+                background-color: transparent;
+                transition: 1s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="mem cent">
+            <p id="cs"> <span id="hi">Hi,</span> Programmer</p>
+            <section class="boxs">
+                <a href="#">
+                    <div class="box">
+                        <span class="titler">Online IDE</span>
+                    </div>
+                </a>
+            </section>
+            <section class="boxs">
+                <a href="#">
+                    <div class="box">
+                        <span class="titler">Online Judge</span>
+                    </div>
+                </a>
+            </section>
+            <section class="boxs">
+                <a href="#">
+                    <div class="box">
+                        <span class="titler">Contests</span>
+                    </div>
+                </a>
+            </section>
+        </div>
+
+    </body>
+</html>

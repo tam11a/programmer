@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Programmer | Sign in</title>
+    <style>
+        * {
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            cursor: pointer;
+            padding-bottom: 15px;
+        }
+        a{
+            background: none;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+        ::placeholder{
+            padding-left: 10px;
+        }
+        body .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 5px;
+        }
+        tr .tabhalf{
+            padding: 5px;
+        }
+        .tabhalf #regform{
+           padding-right: 10px;
+           border-right: #fff 2px solid;
+           transition: 0.3s;
+        }
+        form input, button{
+            height: 40px;
+            width: 200px;
+            margin-bottom: 10px;
+            padding: 0 0 0 15px;
+            border: none;
+            background: none;
+            outline: none;
+            border-radius: 20px;
+            box-shadow:  0 0 5px #ffffffdc;
+            transition: 0.3s;
+        }
+        form input[type="text"]:hover, input[type="password"]:hover, button:hover{
+            box-shadow:  0 0 15px #ffffff;
+            transition: 0.3s;
+        }
+        form input[type="submit"]{
+            box-shadow: none;
+            background-color: #fff;
+            color: #000;
+            transition: 0.3s;
+        }
+        form input[type="submit"]:hover{
+            box-shadow: inset 0 0 10px #fff;
+            background-color: #222;
+            color: #fff;
+            transition: 0.3s;
+        }
+        button{
+            padding: 0 5px 0 5px;
+            box-shadow: inset 0 0 10px #fff;
+            background-color: #222;
+            color: #fff;
+            transition: 0.3s;
+        }
+        button:hover{
+            box-shadow: 0 0 15px #fff;
+            background-color: #000;
+            transition: 0.3s;
+        }
+        button:hover a{
+            color: #fff;
+            transition: 0.3s;
+        }
+        .tabfull #pd{
+            width: 100%;
+            text-align: center;
+            font-size: 15px;
+            padding: 10px;
+            background-color: #fff;
+            color: #000;
+            border-radius: 20px;
+        }
+        #pd a{
+            color: #000;
+            font-size: 20px;
+            background-color: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="middle">
+        <table align="center">
+            <tr>
+                <td class="tabhalf">
+                    <form id="regform" align="center">
+                        <h1 id="reghd">Sign Up</h1>
+                        <input type="text" placeholder="User Name"><br />
+                        <input type="text" placeholder="Email"><br />
+                        <input type="password" placeholder="Password"><br />
+                        <input type="password" placeholder="Confirm Password"><br />
+                        <input type="submit" value="Create an Account">
+                    </form>
+                </td>
+                <td class="tabhalf">
+                    <form id="loginform" align="center">
+                        <h1 id="loghd">Sign In</h1>
+                        <input type="text" placeholder="Email"><br />
+                        <input type="password" placeholder="Password"><br />
+                        <input type="submit" value="Sign in"><br />
+                        <button class="guestb"><a href="menu.html" class="guestentry">Visit as a Guest</a></button><br/>
+                        <button class="guestb"><a href="#" class="guestentry">Contact Us</a></button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tabfull">
+                    <p id="pd">A project from <a href="#" id="tam">Ibrahim Sadik Tamim</a>.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
